@@ -9,8 +9,8 @@
 #include <SDL.h>
 // Dear ImGui
 #include "imgui-style.h"
-#include "imgui/imgui_impl_sdl.h"
-#include "imgui/imgui_impl_opengl3.h"
+#include "imgui_impl_sdl.h"
+#include "imgui_impl_opengl3.h"
 #include "functions.h"
 #include "Widgets.h"
 using namespace Widgets;
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
     (void)io;
-    io.Fonts->AddFontFromFileTTF("verdana.ttf", 18.0f, NULL, NULL);
+    //io.Fonts->AddFontFromFileTTF("verdana.ttf", 18.0f, NULL, NULL);
 
     // setup Dear ImGui style
     // ImGui::StyleColorsDark();
