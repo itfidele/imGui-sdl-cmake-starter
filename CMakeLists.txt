@@ -53,6 +53,8 @@ include_directories(
 # your sources
 set(sources
     main.cpp
+    Widgets.cpp
+    Widgets.h
     imgui/imconfig.h
     imgui/imgui.cpp
     imgui/imgui.h

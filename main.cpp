@@ -12,6 +12,8 @@
 #include "imgui/imgui_impl_sdl.h"
 #include "imgui/imgui_impl_opengl3.h"
 #include "functions.h"
+#include "Widgets.h"
+using namespace Widgets;
 
 int windowWidth = 1280,
     windowHeight = 720;
@@ -211,6 +213,7 @@ int main(int argc, char *argv[])
         ImGui_ImplSDL2_NewFrame(window);
         ImGui::NewFrame();
 
+        
         // standard demo window
         if (show_demo_window)
         {
@@ -220,6 +223,13 @@ int main(int argc, char *argv[])
         {
             ImGui::Begin("Testing Window - Ready to go");
             ImGui::Text("imgui is awesome");
+            
+            {
+                Widgets::Modal();
+                if (ImGui::Button("Open Demo Modal"))
+                    ImGui::OpenPopup("Modal Demo");
+                }
+
             if (!show_demo_window)
             {
                 if (ImGui::Button("Show Me Demo Window"))

@@ -2,6 +2,8 @@
 
 void setImGuiStyle()
 {
+
+    
     ImGuiStyle &style = ImGui::GetStyle();
 
     // https://github.com/ocornut/imgui/issues/707#issuecomment-415097227
@@ -51,16 +53,17 @@ void setImGuiStyle()
     style.WindowPadding            = ImVec2(8, 6);
     style.WindowRounding           = 0.0f;
     style.FramePadding             = ImVec2(5, 7);
-    //style.FrameRounding            = 0.0f;
+    style.FrameRounding            = 0.0f;
     style.ItemSpacing              = ImVec2(5, 5);
-    // style.ItemInnerSpacing         = ImVec2(1, 1);
-    // style.TouchExtraPadding        = ImVec2(0, 0);
-    // style.IndentSpacing            = 6.0f;
-    // style.ScrollbarSize            = 12.0f;
-    // style.ScrollbarRounding        = 16.0f;
-    // style.GrabMinSize              = 20.0f;
-    // style.GrabRounding             = 2.0f;
-    // style.WindowTitleAlign.x = 0.50f;
-    // style.FrameBorderSize = 0.0f;
-    // style.WindowBorderSize = 1.0f;
+    style.ItemInnerSpacing         = ImVec2(1, 1);
+    style.TouchExtraPadding        = ImVec2(0, 0);
+    style.IndentSpacing            = 6.0f;
+    style.ScrollbarSize            = 12.0f;
+    style.ScrollbarRounding        = 16.0f;
+    style.GrabMinSize              = 20.0f;
+    style.GrabRounding             = 2.0f;
+    style.WindowTitleAlign.x = 0.50f;
+    style.FrameBorderSize = 0.0f;
+    style.WindowBorderSize = 1.0f;
+    
 }
